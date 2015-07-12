@@ -124,6 +124,7 @@ header {
 
         button{
           border-radius: 5%;
+
         }
 
       }
@@ -183,6 +184,7 @@ footer {
 
 
 //DashBoard Style
+
 
 //Contact Style
 
@@ -252,8 +254,9 @@ button.BPbut {
       clear: both;
       display: inline-block;
       width: 300px;
-      // float: left;
+      float: left;
       margin: 0 20px 20px 20px;
+
     }
   }
 }
