@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Project Name</title>
+  <title>Assignment 22</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/vendor/normalize.css">
+  <link rel="stylesheet" href="css/vendor/foundation.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body ng-app="pages">
+<nav>
+<li><a href="#/"><button>Home</button></a></li>
+<li><a href="#/login"><button>Login</button></a></li>
+<li><a href="#/register"><button>Register</button></a></li>
+</nav>
+  <div class="container" ng-view>
 
-  <div class="container">
 
   </div>
+  <footer>
 
-  <!-- VENDOR -->
+
+
+  </footer>
+
+
   <script src="js/vendor/jquery.js"></script>
   <script src="js/vendor/underscore.js"></script>
   <script src="js/vendor/angular.js"></script>
+  <script src="js/vendor/angular-route.js"></script>
+  <script src="js/vendor/angular-cookies.js"></script>
 
-  <!-- MAIN -->
+
   <script src="js/main.js"></script>
+
+  <script src="js/pages/register/register.controller.js"></script>
+   <script src="js/pages/login/login.controller.js"></script>
+   <script src="js/pages/dashboard/dashboard.controller.js"></script>
+
 
 </body>
 </html>
+

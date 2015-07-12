@@ -1,0 +1,297 @@
+// // .container {
+// //   color: red;
+// // }
+// nav {
+//   background-color: #115DA9;
+//   height: 90px;
+
+//   a {
+//     color: white;
+//   }
+//   a:hover {
+//     color: #3D3D3A;
+//   }
+// }
+//     .leftNav {
+//       padding-left: 5%;
+//     }
+
+
+
+// .container{
+//   width: 75%;
+//   margin: 20px auto;
+// }
+
+// #map {
+//   height: 400px;
+// }
+
+
+// ul {
+
+
+
+// // Dashboard Styles
+// // * {
+// //  border: 1px solid black;
+// // }
+// .DBh2 {
+//   text-align: center;
+//   font-size: 3.5em;
+//   text-decoration: underline;
+//   background-color: #115DA9;
+//   color: white;
+// }
+
+// .DBh3 {
+//   font-size: 1.5em;
+// }
+
+// .DBListCont {
+//   width: 150px;
+// }
+
+// .DBul{
+//   padding-left: 5%;
+//   display: inline;
+//   float: left;
+//   color: #115DA9;
+// }
+
+
+// .DBli:hover {
+//   font-size: 1.5em;
+//   cursor: pointer;
+//   color: #115DA9
+// }
+
+// .DBimgContainer {
+//   float: right;
+//   margin-bottom: 15px;
+//   border: 1px solid #d6d6d6;
+//   border-radius: 2.5%;
+// }
+
+// .DBImg {
+//   border-radius: 2.5%;
+// }
+
+
+// // img source
+// // http://www.internetbookselling.com/images/iStock_000014235423XSmall_Google_Map.jpg
+
+
+
+//   li {
+//     list-style-type: none;
+//   }
+
+// }
+
+//Color Variables
+$background: #d6d6d6;
+$navBarColors: #1E4064;
+$invalid: #E95151;
+$valid: #6DE7A3;
+$buttonColors:#F6F6F6;
+
+
+//Global Elements
+
+//Main Page Style
+
+//Header
+header {
+  background-color: $navBarColors;
+  border-bottom: 2px solid black;
+}
+
+  nav{
+    height: 55px;
+    padding-right: 100px;
+    padding-left: 100px;
+
+  ul {
+    float: right;
+    li {
+      text-decoration: none;
+      cursor: pointer;
+      display: inline;
+
+      a {
+        text-decoration: none;
+
+        button{
+          border-radius: 5%;
+        }
+
+      }
+      a:visited {
+        color: blue;
+      }
+    }
+   }
+  }
+
+
+.container {
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: $background;
+  min-width: 500px;
+  text-align: justify;
+}
+
+h1 {
+  text-align: center;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: $navBarColors;
+  border: 2px solid black;
+}
+//About Page Style
+
+.bobby{
+
+  display: inline;
+  float: left;
+}
+.bobby img {
+   width: 267px;
+
+}
+.bobby h4 img {
+  width: 50px;
+
+}
+.chris {
+  margin-left: 650px;
+
+}
+.chris img {
+  width: 200px;
+}
+
+.chris h4 img {
+  width: 50px;
+}
+
+
+//DashBoard Style
+
+//Contact Style
+
+ .CPh1 input {
+  width: 300px;
+  height: 300px;
+
+
+}
+
+.phonePic h4 {
+  float: right;
+  margin-top: -200px;
+  margin-right: 192px;
+}
+
+.phonePic img {
+  float: right;
+
+}
+
+// .i {
+// background-color: blue;
+// }
+button.BPbut {
+   width: 100px;
+   height: 60px;
+
+}
+
+
+
+
+
+//Trains Style
+
+//Login Style
+
+#login_container {
+
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    .input1 {
+      // float: left;
+      height: 25px;
+      width: 300px;
+      display: inline;
+      margin: 20px;
+    }
+    .input2 {
+      // float: left;
+      height: 25px;
+      width: 300px;
+      display: inline;
+      margin: 20px;
+    }
+    .LGbutton {
+      clear: both;
+      display: inline-block;
+      width: 300px;
+      // float: left;
+      margin: 0 20px 20px 20px;
+    }
+  }
+}
+
+//Registration Style
+
+#registration_page {
+
+  h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+form {
+  text-align: justify;
+
+  input {
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+  }
+}
+  .RPEmail:valid {
+    background-color: $valid;
+  }
+  .RPEmail:invalid {
+    background-color: $invalid;
+  }
+
+  .RPSub {
+    display: block;
+    clear: both;
+    color: $buttonColors;
+    background-color: $navBarColors;
+  }
+
+}
+
