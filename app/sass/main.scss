@@ -3,7 +3,7 @@
 // // }
 // nav {
 //   background-color: #115DA9;
-//   height: 90px;
+//   height: 90px;}
 
 //   a {
 //     color: white;
@@ -18,10 +18,10 @@
 
 
 
-// .container{
-//   width: 75%;
-//   margin: 20px auto;
-// }
+.container{
+  width: 75%;
+  margin: 20px auto;
+}
 
 // #map {
 //   height: 400px;
@@ -97,9 +97,12 @@ $valid: #6DE7A3;
 $buttonColors:#F6F6F6;
 
 
-//Global Elements
+
 
 //Main Page Style
+.complete {
+  text-decoration: line-through;
+}
 
 //Header
 header {
@@ -157,30 +160,7 @@ footer {
 }
 //About Page Style
 
-.bobby{
 
-  display: inline;
-  float: left;
-}
-.bobby img {
-   width: 267px;
-
-}
-.bobby h4 img {
-  width: 50px;
-
-}
-.chris {
-  margin-left: 650px;
-
-}
-.chris img {
-  width: 200px;
-}
-
-.chris h4 img {
-  width: 50px;
-}
 
 
 //DashBoard Style
@@ -202,16 +182,7 @@ h3.DByourTrips {
 
 }
 
-.phonePic h4 {
-  float: right;
-  margin-top: -200px;
-  margin-right: 192px;
-}
 
-.phonePic img {
-  float: right;
-
-}
 
 // .i {
 // background-color: blue;
@@ -224,11 +195,14 @@ button.BPbut {
 .DBBanner img {
 
 }
+.bFooter {
+
+}
 
 
 
 
-//Trains Style
+
 
 //Login Style
 

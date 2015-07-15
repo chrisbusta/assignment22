@@ -3,14 +3,28 @@
 <div ng-controller="Dashboard">
 
   <h1>Welcome {{ userName }}</h1>
-  <h2> {{ sesh }}</h2>
+  <!-- <h2> {{ sesh }}</h2> -->
 </div>
 <button ng-click="logout();">Logout</button>
-  <div class="DBtrips">
+<div class="container">
+   <h1>Recipe-List</h1>
+
+   <form id="todoform">
+   <input type="text" id="new-text" /><button id="add">Add</button>
+
+   </form>
+    <button id="remove-button">
+     clearcompleted
+    </button>
+   <ul id="todo">
+
+   </ul>
+
+  <!-- <div class="DBtrips">
   <h3 class="DByourTrips">Your Recipes:</h3>
     <div class="DBTripContent">
       <ul>
-        <!-- <li ng-repeat><a href="#">{{ myTrips }}</a></li> -->
+        <li ng-repeat><a href="#">{{ myTrips }}</a></li>
       </ul>
     </div>
 
@@ -20,7 +34,7 @@
 
 
   </div>
-
+ -->
   <div class="DBBanner">
     <img src="images/recipes-logo.png">
   </div>
