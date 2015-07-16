@@ -2,9 +2,6 @@
   width: 75%;
   margin: 20px auto; }
 
-.complete {
-  text-decoration: line-through; }
-
 header {
   background-color: #1E4064;
   border-bottom: 2px solid black; }
@@ -40,7 +37,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  background-color: #1E4064;
+  background-color: grey;
   border: 2px solid black; }
 
 h3.DByourTrips {
@@ -48,6 +45,9 @@ h3.DByourTrips {
 
 .Dashboard button {
   margin-top: 100px; }
+
+.complete {
+  text-decoration: line-through; }
 
 .CPh1 input {
   width: 300px;

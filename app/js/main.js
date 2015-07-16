@@ -23,11 +23,11 @@
   .config(function ($routeProvider) {
     $routeProvider
 
+
     .when('/', {
       templateUrl: 'js/pages/dashboard/dashboard.tpl.html',
       controller: 'Dashboard'
     })
-
 
 
     .when('/register', {

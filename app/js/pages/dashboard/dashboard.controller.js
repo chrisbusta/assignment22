@@ -36,9 +36,9 @@
 
 
 
-}());
-(function(){
-  'use strict';
+// }());
+// (function(){
+//   'use strict';
 
 var Todo = function(options){
 
