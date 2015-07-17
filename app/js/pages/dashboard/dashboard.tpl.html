@@ -6,20 +6,16 @@
   <!-- <h2> {{ sesh }}</h2> -->
 </div>
 <button ng-click="logout();">Logout</button>
-<div class="container">
-   <h1>Recipe-List</h1>
+<!-- <div class="container"> -->
+<body ng-app="submitExample">
 
-   <form id="todoform">
-   <input type="text" id="new-text" /><button id="add">Add</button>
-
-   </form>
-    <button id="remove-button">
-     clearcompleted
-    </button>
-   <ul id="todo">
-
-   </ul>
-
+<form ng-submit="submit()" ng-controller="ExampleController">
+  Enter Recipe and hit enter:
+  <input type="text" ng-model="text" name="text" />
+  <input type="submit" id="submit" value="Submit" />
+  <pre>list={{list}}</pre>
+</form>
+</body>
 
   <div class="DBBanner">
     <img src="images/recipes-logo.png">
