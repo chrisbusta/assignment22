@@ -7,8 +7,35 @@
 <!-- </div> -->
 <button ng-click="logout();">Logout</button>
 <!-- <div class="container"> -->
- <div class="todo-wrapper" ng-controller="TodoCtrl">
-      <h2>You've got <span class="emphasis">{{getTotalTodos()}}</span> things to do</h2>
+<div ng-app="todoApp">
+
+  <div class="jumbotron" style="padding-left:30px;">
+    <h1>Recipe List</h1>
+  </div>
+  <div class="container" ng-controller="todoAppCtrl">
+    <form style="width: 50%;" ng-submit="addTask(newTask)">
+
+      <label for="add">Add a Recipe</label>
+       <div class="form-group">
+      <input id="add" type="text" ng-model="newTask" class="form-control" placeholder="What recipes do you have?">
+      <input type="submit" type="button" value="add task"  class="btn btn-danger">
+       </div>
+
+    </form>
+    <input type="search" ng-model="searchField" class="form-control" style="width:50%" placeholder="Search for Recipe...">
+    <ul class="incomplete-tasks list-unstyled" >
+      <li ng-model="taskCount" ng-repeat="task in tasks | filter:searchField | orderBy">{{task}} <a href ng-click="deleteTask(task)">Delete</a></li>
+      <li class="help-block" ng-show="!taskCount" ng-hide="taskCount">I dont see any Recipes. Add one...</li>
+
+    </ul>
+
+  </div>
+
+
+
+
+<!--  <div class="todo-wrapper" ng-controller="TodoCtrl">
+      <h2>You've got <span class="emphasis">{{getTotalRecipes()}}</span> Recipes</h2>
       <ul>
         <li ng-repeat="todo in todos">
           <input type="checkbox" ng-model="todo.done"/>
@@ -21,17 +48,17 @@
       </form>
 
       <button class="clear-btn" ng-click="clearCompleted()">Clear completed</button>
-    </div>
+    </div> -->
 <!-- <body ng-app="submitExample">
 
-<form ng-submit="submit()" ng-controller="ExampleController">
+<form ng-submit="submit()" ng-controller="TodoCtrl">
   Enter Recipe and hit enter:
   <input type="text" ng-model="text" name="text" />
   <input type="submit" id="submit" value="Submit" />
   <pre>list={{list}}</pre>
 </form>
-</body> -->
-
+</body>
+ -->
   <div class="DBBanner">
     <img src="images/recipes-logo.png">
   </div>

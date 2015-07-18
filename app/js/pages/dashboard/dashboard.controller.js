@@ -36,34 +36,57 @@
 
 
 
-function TodoCtrl($scope) {
+// function TodoCtrl($scope) {
 
-  $scope.todos = [
-    {text:'Learn AngularJS', done:false},
-    {text: 'Build an app', done:false}
-  ];
+//   $scope.todos = [];
 
-  $scope.getTotalTodos = function () {
-    return $scope.todos.length;
-  };
+//   $scope.getTotalRecipes = function () {
+//     return $scope.todos.length;
+//   };
 
 
-  $scope.addTodo = function () {
-    $scope.todos.push({text:$scope.formTodoText, done:false});
-    $scope.formTodoText = '';
-  };
+//   $scope.addTodo = function () {
+//     $scope.todos.push({text:$scope.formTodoText, done:false});
+//     $scope.formTodoText = '';
+//   };
 
-    $scope.clearCompleted = function () {
-        $scope.todos = _.filter($scope.todos, function(todo){
-            return !todo.done;
-        });
-    };
-}
+//     $scope.clearCompleted = function () {
+//         $scope.todos = _.filter($scope.todos, function(todo){
+//             return !todo.done;
+//         });
+//     };
+// }
 }());
+
+var app = angular.module("todoApp",[]);
+
+var todoAppCtrl = app.controller("todoAppCtrl",function($scope){
+
+  $scope.tasks = [];
+  $scope.taskCount = 0;
+
+
+  $scope.addTask = function(name){
+    if (name){
+      $scope.tasks.push(name);
+      $scope.newTask = "";
+      $scope.taskCount++;
+    }
+  }
+
+  $scope.deleteTask = function(task){
+    var i = $scope.tasks.indexOf(task);
+    console.log(i);
+    $scope.tasks.splice(i,1);
+    $scope.taskCount--;
+
+  }
+
+});
 
 
 // angular.module('submitExample', [])
-//     .controller('ExampleController', ['$scope', function($scope) {
+//     .controller('TodoCtrl', ['$scope', function($scope) {
 //       $scope.list = [];
 //       $scope.text = 'hello';
 //       $scope.submit = function() {

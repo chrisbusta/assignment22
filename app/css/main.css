@@ -1,32 +1,7 @@
 .container {
-  width: 75%;
-  margin: 20px auto; }
-
-header {
-  background-color: #1E4064;
-  border-bottom: 2px solid black; }
-
-nav {
-  height: 55px;
-  padding-right: 100px;
-  padding-left: 100px; }
-  nav ul {
-    float: right; }
-    nav ul li {
-      text-decoration: none;
-      cursor: pointer;
-      display: inline; }
-      nav ul li a {
-        text-decoration: none; }
-        nav ul li a button {
-          border-radius: 5%; }
-      nav ul li a:visited {
-        color: blue; }
-
-.container {
   padding-left: 100px;
   padding-right: 100px;
-  background-color: #d6d6d6;
+  background-color: #7BACD0;
   min-width: 500px;
   text-align: justify; }
 
@@ -49,17 +24,13 @@ h3.DByourTrips {
 .complete {
   text-decoration: line-through; }
 
-.CPh1 input {
-  width: 300px;
-  height: 300px; }
-
 button.BPbut {
   width: 100px;
   height: 60px; }
 
 #login_container h1 {
   text-align: center;
-  font-size: 2em; }
+  font-size: 3em; }
 
 #login_container form {
   text-align: center;
@@ -95,15 +66,3 @@ button.BPbut {
     margin-left: auto;
     margin-right: auto;
     border-radius: 5px; }
-
-#registration_page .RPEmail:valid {
-  background-color: #6DE7A3; }
-
-#registration_page .RPEmail:invalid {
-  background-color: #E95151; }
-
-#registration_page .RPSub {
-  display: block;
-  clear: both;
-  color: #F6F6F6;
-  background-color: #1E4064; }
